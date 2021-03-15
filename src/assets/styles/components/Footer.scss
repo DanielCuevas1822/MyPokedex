@@ -1,0 +1,8 @@
+@import "../Vars.scss";
+@import "../Functions.scss";
+.footer {
+  background: $bg-pokedex;
+  &__container {
+    height: rem(74);
+  }
+}

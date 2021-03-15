@@ -1,0 +1,32 @@
+@import "../Vars.scss";
+@import "../Functions.scss";
+@import "../Mixins.scss";
+.header {
+  background: $bg-pokedex;
+  &__container {
+    @include tablet() {
+      height: rem(115);
+    }
+    &__leds {
+      @include mobil() {
+        padding-top: rem(20);
+      }
+      @include tablet() {
+        padding-top: rem(0);
+      }
+    }
+    &__logo {
+      @include mobil() {
+        text-align: center;
+      }
+    }
+    &__home {
+      @include mobil() {
+        text-align: center;
+      }
+      @include tablet() {
+        text-align: right;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@import "../Vars.scss";
+@import "../Functions.scss";
+@import "../Mixins.scss";
+.poke-button {
+  padding-bottom: rem(75);
+  button {
+    background-color: $paragraph_color;
+    color: white;
+    height: rem(74);
+    width: rem(294);
+    border: none;
+    border-radius: rem(50);
+    font-size: rem(25);
+    font-weight: bold;
+    box-shadow: 0 rem(4) rem(4) rgba(0, 0, 0, 0.25);
+  }
+}
+.poke-search {
+  padding-top: rem(75);
+  width: rem(387);
+  font-size: rem(25);
+  .searchpokemon {
+    border-radius: rem(50);
+    border: solid rem(2.5) $paragraph_color;
+    font-weight: bold;
+    color: $paragraph_color;
+    text-align: center;
+    box-shadow: 0 rem(4) rem(4) rgba(0, 0, 0, 0.25);
+  }
+  ::-webkit-input-placeholder {
+    text-align: center;
+    opacity: 1;
+  }
+  :-moz-placeholder {
+    text-align: center;
+    opacity: 1;
+  }
+  ::-moz-placeholder {
+    text-align: center;
+    opacity: 1;
+  }
+  :-ms-input-placeholder {
+    text-align: center;
+    opacity: 1;
+  }
+}
