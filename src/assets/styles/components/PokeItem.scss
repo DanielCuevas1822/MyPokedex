@@ -23,11 +23,13 @@
     font-weight: bold;
   }
   &__name {
+    text-transform: capitalize;
     font-size: rem(20);
     font-weight: bold;
     color: white;
   }
   &__type {
+    text-transform: capitalize;
     color: white;
     font-weight: 600;
     width: rem(80);
@@ -35,5 +37,9 @@
     font-size: rem(15);
     margin-bottom: rem(6);
     border-radius: rem(100);
+  }
+  &__image {
+    width: 100%;
+    height: rem(95);
   }
 }
