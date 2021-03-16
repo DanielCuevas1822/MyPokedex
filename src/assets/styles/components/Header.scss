@@ -23,6 +23,8 @@
     &__home {
       @include mobil() {
         text-align: center;
+        margin-bottom: rem(10);
+        margin-top: rem(10);
       }
       @include tablet() {
         text-align: right;

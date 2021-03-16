@@ -2,7 +2,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Home from "./screens/Home";
 import "./App.scss";
-import backgroundpokeball from "./assets/static/backgroundpokeball.png";
+import backgroundpokeball from "./assets/static/backgroundpokeball.svg";
 
 function App() {
   return (

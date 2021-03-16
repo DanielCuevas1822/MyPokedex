@@ -1,6 +1,6 @@
 import React from "react";
 import "../assets/styles/components/PokeItem.scss";
-import pokeball from "../assets/static/MaskPokeball.png";
+import pokeball from "../assets/static/MaskPokeball.svg";
 
 const PokeItem = () => {
   return (
