@@ -3,7 +3,12 @@ import "../assets/styles/components/PokeItem.scss";
 import pokeball from "../assets/static/MaskPokeball.svg";
 
 const PokeItem = ({ info }) => {
-  const [pokemonData, setpokemonData] = useState("");
+  const [pokemonData, setpokemonData] = useState({
+    namepokemon: "",
+    number: "",
+    types: [{ type: { name: "" } }, { type: { name: "" } }],
+    image: "",
+  });
 
   useEffect(() => {
     fetch(info.url)
@@ -16,6 +21,7 @@ const PokeItem = ({ info }) => {
           image: responseData.sprites.other.dream_world.front_default,
         });
       });
+    // eslint-disable-next-line
   }, []);
 
   return (

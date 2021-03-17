@@ -17,9 +17,17 @@
 }
 .poke-search {
   padding-top: rem(75);
-  width: rem(387);
+  // width: rem(387);
   font-size: rem(25);
+  .poke__btn{
+    background-color: $paragraph_color;
+    color: white;
+    height: rem(43.5);
+    width: rem(45);
+    border-radius: 50%;
+  }
   .search {
+    width: 100%;
     border-radius: rem(50);
     border: solid rem(2.5) $paragraph_color;
     font-weight: bold;
