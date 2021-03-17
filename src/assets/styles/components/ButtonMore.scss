@@ -1,0 +1,17 @@
+@import "../Vars.scss";
+@import "../Functions.scss";
+@import "../Mixins.scss";
+.poke-button {
+  padding-bottom: rem(75);
+  button {
+    background-color: $paragraph_color;
+    color: white;
+    height: rem(74);
+    width: rem(294);
+    border: none;
+    border-radius: rem(50);
+    font-size: rem(25);
+    font-weight: bold;
+    box-shadow: 0 rem(4) rem(4) rgba(0, 0, 0, 0.25);
+  }
+}
