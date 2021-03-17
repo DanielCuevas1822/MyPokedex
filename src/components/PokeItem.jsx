@@ -1,32 +1,30 @@
 import React, { useEffect, useState } from "react";
 import "../assets/styles/components/PokeItem.scss";
 import pokeball from "../assets/static/MaskPokeball.svg";
+import Loader from "./Loader";
 
 const PokeItem = ({ info }) => {
-  const [pokemonData, setpokemonData] = useState({
-    namepokemon: "",
-    number: "",
-    types: [{ type: { name: "" } }, { type: { name: "" } }],
-    image: "",
-  });
+  const [pokemonData, setpokemonData] = useState([]);
+  const [isloading, setIsLoading] = useState(false);
 
-  useEffect(() => {
+  useEffect(() => {    
     fetch(info.url)
       .then((response) => response.json())
-      .then((responseData) => {
+      .then((responseData) => {        
         setpokemonData({
           namepokemon: responseData.name,
           number: responseData.id,
           types: responseData.types,
           image: responseData.sprites.other.dream_world.front_default,
         });
+        setIsLoading(true);
       });
     // eslint-disable-next-line
   }, []);
 
   return (
     <div className="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-      {pokemonData ? (
+      {isloading === true ? (
         <div className="poke-card">
           <img src={pokeball} alt="" className="maskpokeball" />
 
@@ -61,7 +59,7 @@ const PokeItem = ({ info }) => {
             </div>
           </div>
         </div>
-      ) : null}
+      ) : <Loader/>}
     </div>
   );
 };

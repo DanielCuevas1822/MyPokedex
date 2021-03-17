@@ -1,16 +1,17 @@
 import React from "react";
 import Section from "../components/Section";
-import "../assets/styles/screens/Home.scss";
 import { useEffect, useState } from "react";
 import Loader from "../components/Loader";
 import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+import SearchBar from "../components/SearchBar";
+import ButtonMore from "../components/ButtonMore";
 
 const Home = () => {
   const [data, setData] = useState([]);
   const [nextdata, setNextData] = useState("");
-
   const [searchResults, setSearchResults] = useState([]);
   const [searching, setSearching] = useState("");
+  const [issearching, setIsSearching] = useState(false);
 
   useEffect(() => {
     fetch("https://pokeapi.co/api/v2/pokemon?offset=0&limit=18")
@@ -36,61 +37,46 @@ const Home = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    setSearchResults([]);
+    setSearching("");
+
     fetch(`https://pokeapi.co/api/v2/pokemon/${searching.toLowerCase()}`)
       .then((response) => {
         if (!response.ok) throw Error(response.status);
         return response.json();
       })
       .then((responseData) => {
-        setSearching("");
-        setSearchResults([]);
+        setIsSearching(true);
         setSearchResults([
           {
             name: responseData.name,
             url: `https://pokeapi.co/api/v2/pokemon/${responseData.id}/`,
           },
-        ]);
+        ]);        
       })
       .catch((error) => {
-        setSearching("");
-        alert("Not Found");
+        setIsSearching(false);
+        alert("Pokémon not found " + error);
       });
   };
 
   return (
-    <div className="container">
+    <div className="container home">
       <div className="row">
-        <div className="col-sm-12 poke-search d-flex justify-content-center">
-          <form onSubmit={handleSubmit} className="row g-3">
-            <div className="col-9">
-              <input
-                className="search"
-                type="text"
-                placeholder="Search a Pokémon"
-                onChange={handleChange}
-                value={searching}
-              />
-            </div>
+        <SearchBar
+          handleSubmit={handleSubmit}
+          handleChange={handleChange}
+          searching={searching}
+        />
 
-            <div className="col-3">
-              <button type="submit" className="btn poke__btn mb-3">
-                <i className="bi bi-search"></i>
-              </button>
-            </div>
-          </form>
-        </div>
-
-        {searchResults.length > 0 ? (
-          <Section title="Results" pokemon={searchResults} />
-        ) : null}
+        {issearching === true ? (
+          searchResults.length > 0 ? (<Section title="Results" pokemon={searchResults} />):(<Loader/>)
+        ) : null}        
 
         {data.length > 0 ? (
           <React.Fragment>
             <Section title="All Pokémon" pokemon={data} />
-
-            <div className="col-sm-12 poke-button d-flex justify-content-center">
-              <button onClick={handleShowMore}>Show More</button>
-            </div>
+            <ButtonMore handleShowMore={handleShowMore} />
           </React.Fragment>
         ) : (
           <Loader />
