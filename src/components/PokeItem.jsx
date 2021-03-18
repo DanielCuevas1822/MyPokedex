@@ -6,6 +6,7 @@ import Loader from "./Loader";
 const PokeItem = ({ info }) => {
   const [pokemonData, setpokemonData] = useState([]);
   const [isloading, setIsLoading] = useState(false);
+  const [typeclass, setTypeClass] = useState("");
 
   useEffect(() => {    
     fetch(info.url)
@@ -17,6 +18,7 @@ const PokeItem = ({ info }) => {
           types: responseData.types,
           image: responseData.sprites.other.dream_world.front_default,
         });
+        setTypeClass(responseData.types[0].type.name);
         setIsLoading(true);
       });
     // eslint-disable-next-line
@@ -25,7 +27,7 @@ const PokeItem = ({ info }) => {
   return (
     <div className="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
       {isloading === true ? (
-        <div className="poke-card">
+        <div className={`poke-card ${typeclass}`}>
           <img src={pokeball} alt="" className="maskpokeball" />
 
           <div className="col poke-card__number text-right">
