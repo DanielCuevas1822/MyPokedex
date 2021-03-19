@@ -2,7 +2,8 @@ import React from "react";
 import "../assets/styles/components/Header.scss";
 import LedsPokedex from "../assets/static/LedsPokedex.svg";
 import Logo from "../assets/static/logo.svg";
-// import home from "../assets/static/home.svg";
+import { Link } from "react-router-dom";
+import home from "../assets/static/home.svg";
 
 const Header = () => {
   return (
@@ -16,7 +17,9 @@ const Header = () => {
             <img src={Logo} alt="logo" />
           </div>
           <div className="col-sm-12 col-md-4 header__container__home">
-            {/* <img src={home} alt="home" /> */}
+            <Link to="/">
+            <img src={home} alt="home" />
+            </Link>
           </div>
         </div>
       </div>
