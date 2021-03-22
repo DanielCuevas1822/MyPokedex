@@ -12,9 +12,7 @@ function App() {
       <img className="bgpokeball" src={bgpokeball} alt="bgpokeball" />
       <Header />
       <Switch>
-        <Route path="/pokemon/:nombre">
-          <SinglePokemon />
-        </Route>
+        <Route path="/pokemon/:nombre" component={SinglePokemon} />    
         <Route path="/">
           <Home />
         </Route>

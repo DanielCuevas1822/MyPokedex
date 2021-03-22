@@ -26,6 +26,9 @@
 
   &__details {
     .abiliti_item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       background: $paragraph_color;
       border-radius: 50px;
       color: white;
@@ -39,7 +42,7 @@
       margin-top: rem(25);
       p {
         text-align: center;
-        font-size: rem(25);
+        font-size: rem(20);
         font-weight: 400;
       }
     }
@@ -56,6 +59,7 @@
       font-weight: bold;
     }
     &__name {
+      text-transform: capitalize;
       color: $paragraph_color;
       @include tablet() {
         font-size: rem(40);
@@ -106,6 +110,7 @@
       width: 100%;
       margin-top: rem(20);
       border-radius: 50px;
+      text-transform: capitalize;
       p {
         color: white;
         text-align: center;
@@ -141,19 +146,20 @@
       }
     }
     &__image {
-      height: 70%;
+      height: 90%;
     }
   }
 }
 
 .item {
   &__detail {
-    font-size: rem(34);
+    font-size: rem(30);
     color: $paragraph_color;
     font-weight: 500;
+    text-transform: capitalize;
   }
   &__value {
-    font-size: rem(34);
+    font-size: rem(30);
     color: black;
     font-weight: 400;
   }
