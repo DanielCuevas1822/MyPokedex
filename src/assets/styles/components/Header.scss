@@ -2,6 +2,9 @@
 @import "../Functions.scss";
 @import "../Mixins.scss";
 .header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
   background: $bg-pokedex;
   &__container {
     @include tablet() {
@@ -10,14 +13,20 @@
     &__leds {
       @include mobil() {
         padding-top: rem(20);
+        padding-bottom: rem(20);
       }
       @include tablet() {
         padding-top: rem(0);
+        padding-bottom: rem(0);
       }
     }
     &__logo {
       @include mobil() {
         text-align: center;
+        display: none;
+      }
+      @include tablet() {
+        display: unset;
       }
     }
     &__home {

@@ -10,28 +10,34 @@ const SinglePokemon = (props) => {
   const [isloading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    let isSubscribed = true;    
     fetch(`https://pokeapi.co/api/v2/pokemon/${props.match.params.nombre}`)
       .then((response) => response.json())
       .then((responseData) => {
-        setPokeData({
-          pokeimage:
-            responseData.sprites.other["official-artwork"].front_default,
-          pokename: responseData.name,
-          pokeid: responseData.id,
-          pokeheight: responseData.height,
-          pokeweight: responseData.weight,
-          pokeabilities: responseData.abilities,
-          pokestats: responseData.stats,
-          poketypes: responseData.types.map((item) => item.type.url),
-          poketype: responseData.types[0].type.name,
-          pokeshiny: {
-            front: responseData.sprites.front_shiny,
-            back: responseData.sprites.back_shiny,
-          },
-          pokespecies: responseData.species,
-        });
-        setIsLoading(false);
-      }); // eslint-disable-next-line
+        if (isSubscribed) {
+          setPokeData({
+            pokeimage:
+              responseData.sprites.other["official-artwork"].front_default,
+            pokename: responseData.name,
+            pokeid: responseData.id,
+            pokeheight: responseData.height,
+            pokeweight: responseData.weight,
+            pokeabilities: responseData.abilities,
+            pokestats: responseData.stats,
+            poketypes: responseData.types.map((item) => item.type.url),
+            poketype: responseData.types[0].type.name,
+            pokeshiny: {
+              front: responseData.sprites.front_shiny,
+              back: responseData.sprites.back_shiny,
+            },
+            pokespecies: responseData.species,
+          });
+          setIsLoading(false);
+        }
+      }); 
+      
+      return () => (isSubscribed = false);
+      // eslint-disable-next-line
   }, [pokeData]);
 
   return (

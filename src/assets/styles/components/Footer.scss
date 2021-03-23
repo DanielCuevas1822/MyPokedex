@@ -1,6 +1,10 @@
 @import "../Vars.scss";
 @import "../Functions.scss";
 .footer {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  bottom: 0;
   background: $bg-pokedex;
   &__container {
     height: rem(74);

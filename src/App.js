@@ -11,12 +11,12 @@ function App() {
     <div className="App">
       <img className="bgpokeball" src={bgpokeball} alt="bgpokeball" />
       <Header />
-      <Switch>
-        <Route path="/pokemon/:nombre" component={SinglePokemon} />    
-        <Route path="/">
-          <Home />
-        </Route>
-      </Switch>
+      <main>
+        <Switch>
+          <Route path="/pokemon/:nombre" component={SinglePokemon} />
+          <Route component={Home} />
+        </Switch>
+      </main>
       <Footer />
     </div>
   );

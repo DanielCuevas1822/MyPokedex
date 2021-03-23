@@ -8,7 +8,9 @@ const Footer = () => {
       <div className="container">
         <div className="row align-items-center footer__container">
           <div className="col text-center">
-            <img src={githublogo} alt="logo github" />
+            <a href="https://github.com/DanielCuevas1822">
+              <img src={githublogo} alt="logo github" />
+            </a>
           </div>
         </div>
       </div>
