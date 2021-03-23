@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/MyPokedex/static/css/main.c9eab9bd.chunk.css",
+    "main.js": "/MyPokedex/static/js/main.391bcc4e.chunk.js",
+    "main.js.map": "/MyPokedex/static/js/main.391bcc4e.chunk.js.map",
+    "runtime-main.js": "/MyPokedex/static/js/runtime-main.03dce64b.js",
+    "runtime-main.js.map": "/MyPokedex/static/js/runtime-main.03dce64b.js.map",
+    "static/css/2.291f3cdd.chunk.css": "/MyPokedex/static/css/2.291f3cdd.chunk.css",
+    "static/js/2.60152bbc.chunk.js": "/MyPokedex/static/js/2.60152bbc.chunk.js",
+    "static/js/2.60152bbc.chunk.js.map": "/MyPokedex/static/js/2.60152bbc.chunk.js.map",
+    "static/js/3.c54df34e.chunk.js": "/MyPokedex/static/js/3.c54df34e.chunk.js",
+    "static/js/3.c54df34e.chunk.js.map": "/MyPokedex/static/js/3.c54df34e.chunk.js.map",
+    "index.html": "/MyPokedex/index.html",
+    "static/css/2.291f3cdd.chunk.css.map": "/MyPokedex/static/css/2.291f3cdd.chunk.css.map",
+    "static/css/main.c9eab9bd.chunk.css.map": "/MyPokedex/static/css/main.c9eab9bd.chunk.css.map",
+    "static/js/2.60152bbc.chunk.js.LICENSE.txt": "/MyPokedex/static/js/2.60152bbc.chunk.js.LICENSE.txt",
+    "static/media/LedsPokedex.b8a48c7a.svg": "/MyPokedex/static/media/LedsPokedex.b8a48c7a.svg",
+    "static/media/MaskPokeball.2a6263f9.svg": "/MyPokedex/static/media/MaskPokeball.2a6263f9.svg",
+    "static/media/backgroundpokeball.d8a0ea1e.svg": "/MyPokedex/static/media/backgroundpokeball.d8a0ea1e.svg",
+    "static/media/bootstrap-icons.css": "/MyPokedex/static/media/bootstrap-icons.cc252f2c.woff",
+    "static/media/githublogo.1b245b40.svg": "/MyPokedex/static/media/githublogo.1b245b40.svg",
+    "static/media/home.3e56ece9.svg": "/MyPokedex/static/media/home.3e56ece9.svg",
+    "static/media/logo.b691874b.svg": "/MyPokedex/static/media/logo.b691874b.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.03dce64b.js",
+    "static/css/2.291f3cdd.chunk.css",
+    "static/js/2.60152bbc.chunk.js",
+    "static/css/main.c9eab9bd.chunk.css",
+    "static/js/main.391bcc4e.chunk.js"
+  ]
+}
