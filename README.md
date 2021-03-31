@@ -1,4 +1,4 @@
-# LandingReact
+# MyPokédex
 
 _Proyect made in React Js with the PokeAPI informaton._
 
