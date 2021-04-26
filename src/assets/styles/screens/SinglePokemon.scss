@@ -121,6 +121,7 @@
 
   &__shiny {
     &__container {
+      margin-top: rem(50);
       display: flex;
       justify-content: space-around;
       @include mobil() {
@@ -163,4 +164,8 @@
     color: black;
     font-weight: 400;
   }
+}
+
+.magi{
+  height: rem(100);
 }

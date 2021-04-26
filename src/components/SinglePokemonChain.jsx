@@ -64,6 +64,7 @@ const SinglePokemonChain = (props) => {
               </div>
             </div>
           ) : null}
+         <div className="magi"></div>
         </React.Fragment>
       )}
     </React.Fragment>

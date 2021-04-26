@@ -2,7 +2,7 @@
 @import "../Functions.scss";
 @import "../Mixins.scss";
 .poke-button {
-  padding-bottom: rem(75);
+  margin-bottom: rem(100);
   button {
     background-color: $paragraph_color;
     color: white;
