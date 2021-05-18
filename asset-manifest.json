@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/MyPokedex/static/css/main.28ef03f5.chunk.css",
+    "main.js": "/MyPokedex/static/js/main.7a2e2f80.chunk.js",
+    "main.js.map": "/MyPokedex/static/js/main.7a2e2f80.chunk.js.map",
+    "runtime-main.js": "/MyPokedex/static/js/runtime-main.e8fe0a6e.js",
+    "runtime-main.js.map": "/MyPokedex/static/js/runtime-main.e8fe0a6e.js.map",
+    "static/css/2.2d37c7aa.chunk.css": "/MyPokedex/static/css/2.2d37c7aa.chunk.css",
+    "static/js/2.ed0c6e67.chunk.js": "/MyPokedex/static/js/2.ed0c6e67.chunk.js",
+    "static/js/2.ed0c6e67.chunk.js.map": "/MyPokedex/static/js/2.ed0c6e67.chunk.js.map",
+    "static/js/3.c642fe73.chunk.js": "/MyPokedex/static/js/3.c642fe73.chunk.js",
+    "static/js/3.c642fe73.chunk.js.map": "/MyPokedex/static/js/3.c642fe73.chunk.js.map",
+    "index.html": "/MyPokedex/index.html",
+    "static/css/2.2d37c7aa.chunk.css.map": "/MyPokedex/static/css/2.2d37c7aa.chunk.css.map",
+    "static/css/main.28ef03f5.chunk.css.map": "/MyPokedex/static/css/main.28ef03f5.chunk.css.map",
+    "static/js/2.ed0c6e67.chunk.js.LICENSE.txt": "/MyPokedex/static/js/2.ed0c6e67.chunk.js.LICENSE.txt",
+    "static/media/LedsPokedex.b8a48c7a.svg": "/MyPokedex/static/media/LedsPokedex.b8a48c7a.svg",
+    "static/media/MaskPokeball.2a6263f9.svg": "/MyPokedex/static/media/MaskPokeball.2a6263f9.svg",
+    "static/media/backgroundpokeball.d8a0ea1e.svg": "/MyPokedex/static/media/backgroundpokeball.d8a0ea1e.svg",
+    "static/media/bootstrap-icons.css": "/MyPokedex/static/media/bootstrap-icons.dfd0ea12.woff2",
+    "static/media/githublogo.1b245b40.svg": "/MyPokedex/static/media/githublogo.1b245b40.svg",
+    "static/media/home.3e56ece9.svg": "/MyPokedex/static/media/home.3e56ece9.svg",
+    "static/media/logo.b691874b.svg": "/MyPokedex/static/media/logo.b691874b.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e8fe0a6e.js",
+    "static/css/2.2d37c7aa.chunk.css",
+    "static/js/2.ed0c6e67.chunk.js",
+    "static/css/main.28ef03f5.chunk.css",
+    "static/js/main.7a2e2f80.chunk.js"
+  ]
+}
