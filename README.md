@@ -1,6 +1,6 @@
 # MyPokédex
 
-_Project made in React Js with the PokeAPI informaton. See abilities, stats, types and shiny form of your favorite pokémon. With this application, you can search by name for any existing Pokémon._
+_Web app made in React Js with the PokeAPI informaton. See abilities, stats, types and shiny form of your favorite pokémon. With this application, you can search by name for any existing Pokémon._
 
 _Concepts learned in this proyect:_
 
